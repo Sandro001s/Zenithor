@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
+    <title>Sign up</title>
+    <link rel="icon" href="./images/logoweb.png">
+    <link rel="stylesheet" href="./signup.css">
+    <script src="https://kit.fontawesome.com/66b0dc1e98.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <div class="container">
-        
+        <div class="signup-page">
+            <h1>Sign up</h1>
+            <p class="desc">Create an account to access exclusive features and stay connected!</p>
+            <form>
+                <fieldset>
+                    <div class="firs-last-name">
+                        <input class="input" type="text" name="name" id="name" placeholder="First Name" required>
+                        <input class="input" type="text" name="last-name" id="lastname" placeholder="Last Name" required>
+                    </div>
+
+                    <input class="input email" type="text" name="email" id="email" placeholder="Email" required>  
+
+                    <div class="passworddiv">
+                        <input class="input password" type="password" name="password" id="password" placeholder="Password" required>
+                        
+                        <span id="8characterError">Your password should be at least 8 characters</span>
+
+                    <input class="input confirm-password" type="password" name="password2" id="password2" placeholder="Confirm Password" required>
+                    </div>         
+                </fieldset>
+                
+                    <input class="input" id="age" type="age" placeholder="Year of Birth" required>
+                    <label for="">Select Your Gender</label>
+                    <select class="gender">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Other</option>
+                    </select>
+
+                    <div class="soclinks">
+                        <ul>
+                            <li><a class="links" href="#"><i class="fa-brands fa-facebook size" style="color: #fff;"></i></a></li>
+                            <li><a class="links" href="#"><i class="fa-brands fa-google size" style="color: #fff;"></i></a></li>
+                            <li><a class="links" href="#"><i class="fa-brands fa-twitter size" style="color: #fff;"></i></a></i></li>
+                        </ul>
+                    
+                    </div>
+
+                <button class="submit" type="submit">Sign up</button>
+            </form>
+        </div>
     </div>
     
+
+    <script src="./dist/signup.js"></script>
 </body>
 </html>

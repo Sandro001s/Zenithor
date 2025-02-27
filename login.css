@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: url(/images/mainimg.jpg);
+    background-image: url(./images/mainimg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,4 +1,9 @@
-
+.ubuntu-sans-mono,.container{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 
 *{
@@ -18,12 +23,192 @@ body{
 }
 
 .container{
-    width: 1500px;
+    width: 800px;
     height: 850px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     margin-top: 100px;
     border-radius: 50px;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 0 8px 32px 0 rgba(0,0,0,0.37);
+    display: flex;
+    justify-content: center;
+}
+
+.signup-page{
+    width: 800px;
+    height: 100%;
+    border: 2px solid #00000031;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: 000000;
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.desc{
+    color: #000000;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+form,fieldset{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 700px;
+    gap: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+    outline: none;
+    background-color: initial;
+    border: none;
+    border-bottom: 3px solid #000000;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 700;
+    transition: 0.1s ease;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{ 
+    padding: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+input[type="age"]{
+    background-color: initial;
+    width: 100%;
+    height: 50px;
+    padding: 6px 0 0 20px;
+    margin-top: 40px;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 3px solid #000000;
+    outline: none;
+    transition: 0.1s ease;
+}
+
+input:active,input:focus{
+    border: 3px solid #000000;
+}
+
+#email{
+    width: 100%;
+}
+
+.passworddiv span{
+    font-size: 1.1rem;
+    color: #000000;
+    position: absolute;
+    margin-top: 70px;
+    color: red;
+    display: none;
+}
+
+.firs-last-name,.passworddiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+input::placeholder{
+    font-size: 1.5rem;
+    color: #000000;
+    padding-left: 20px;
+}
+
+.gender{
+    outline: none;
+    height: 50px;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    border-radius: 20px;
+    appearance: none;
+    border: 3px solid #000000;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+
+.submit{
+    height: 90px;
+    font-size: 1.7rem;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    border: none;
+    transition: 0.1s ease;
+}
+
+.submit:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 7px;
+}
+
+.error {
+    border: none !important;
+    box-shadow: 0px 3px 0px red !important;
+}
+
+
+
+ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li .links{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #171515;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    transition: .5s;
+}
+
+ul li .links::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li .links:hover::before{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+    filter: blur(3px);
+}
+
+ul li .links:hover{
+    font-size: 35px;
+    box-shadow: 0 0 15px white;
+    text-shadow: 0 0 4px white;
+}
+
+.soclinks{
+    margin-left: 200px;
 }

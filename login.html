@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+    <title>Login</title>
+    <link rel="icon" href="./images/logoweb.png">
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +16,21 @@
     <div class="container">
         <div class="login">
             <h1 class="ubuntu-sans-mono textlogin">Login</h1>
+            
             <div class="input-div">
-                <input class="email" type="text" id="login" placeholder="Email">
+                <input class="email" type="text" id="login" placeholder="Email" required>
                 <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                 <input class="pass" type="password" id="password" placeholder="Password">
                 <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
             </div>
             
             <div class="save">
-                <input type="checkbox" class="check">
+                <input type="checkbox" class="check" required>
                 <p class="remember ubuntu-sans-mono">Remember me</p>
                 <a class="forgot ubuntu-sans-mono" href="">Forgot password ?</a>
             </div>
 
-            <button class="submit ubuntu-sans-mono">Login</button>
+            <button type="submit" class="submit ubuntu-sans-mono">Login</button>
 
             <div class="register">
                 <p class="ubuntu-sans-mono ">Don't have an account?</p>
@@ -47,6 +48,6 @@
         </div>
     </div>
 
-    
+    <script src="./dist/login.js"></script>
 </body>
 </html>

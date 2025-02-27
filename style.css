@@ -114,13 +114,6 @@
     opacity: 0.5;
 }
 
-.menu{
-    margin-left: 130px;
-    width: 50px;
-    height: 50px;
-    margin-top: 50px;
-}
-
 .mainimg{
     background-image: url(./images/mainimg.jpg);
     width: 100%;
